@@ -20,13 +20,11 @@ public class MyImageFrame1 extends JFrame implements ActionListener {
 	private int pieces = 4;
 	private int totalPieces = pieces * pieces;
 	private int[] pieceNumber;
-	public int sx;
-	public int x;
 
 	public MyImageFrame1() {
 		setTitle("Image Draw Test");
 		try {
-			img = ImageIO.read(new File("icon.jpg"));
+			img = ImageIO.read(new File("space.jpg"));
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 			System.exit(0);
